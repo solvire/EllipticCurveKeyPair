@@ -214,7 +214,8 @@ public struct EllipticCurveKeyPair {
         @available(iOSApplicationExtension 9.0, *)
         static func createAccessControl(protection: CFString = kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly, flags: SecAccessControlCreateFlags = [.userPresence, .privateKeyUsage]) throws -> SecAccessControl {
             var error: Unmanaged<CFError>?
-            let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault, protection, flags, &error)
+//            let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault, protection, flags, &error)
+            let accessControl = SecAccessControlCreateWithFlags(kCFAllocatorDefault, kSecAttrAccessibleAlways, .privateKeyUsage, &error)
             guard accessControl != nil else {
                 throw Error.fromError(error, message: "Tried creating access control object with flags \(flags) and protection \(protection)")
             }
