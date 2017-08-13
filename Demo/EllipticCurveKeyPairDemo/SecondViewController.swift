@@ -83,5 +83,28 @@ class SecondViewController: UIViewController {
             publicKeyTextView.text = "Error: \(error)"
         }
     }
+    
+    
+    @IBAction func signCSR(_ sender: Any) {
+        do {
+            // fill up our OID names
+            let attributes = [
+                X509NameAttribute()
+            ]
+            
+            // pass in the subject name to the builder on init
+            var xbuilder = CertificateSigningRequestBuilder(
+                subjectName: X509Name(
+                    attributes: attributes))
+            
+//            let subjectName = X509Name()
+//            xbuilder.addSubjectName(subjectName: subjectName)
+            signatureTextView.text = "Somting signeded"
+        } catch {
+            publicKeyTextView.text = "Somting not a signed"
+        }
+    }
+    
+    
 }
 

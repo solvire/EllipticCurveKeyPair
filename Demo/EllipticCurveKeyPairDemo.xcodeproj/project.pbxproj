@@ -17,6 +17,8 @@
 		A32FB6D31E54598700C5EA21 /* ELCKPCommonCryptoAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6D11E54598700C5EA21 /* ELCKPCommonCryptoAccess.m */; };
 		A32FB6D71E54599B00C5EA21 /* EllipticCurveKeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6D61E54599B00C5EA21 /* EllipticCurveKeyPair.swift */; };
 		A32FB6D91E54661200C5EA21 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6D81E54661200C5EA21 /* Utils.swift */; };
+		A9756AFE1F3FD32D00E60D3C /* X509Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9756AFD1F3FD32D00E60D3C /* X509Request.swift */; };
+		A9756B001F3FEDD200E60D3C /* OID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9756AFF1F3FEDD200E60D3C /* OID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		A32FB6D11E54598700C5EA21 /* ELCKPCommonCryptoAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCKPCommonCryptoAccess.m; sourceTree = "<group>"; };
 		A32FB6D61E54599B00C5EA21 /* EllipticCurveKeyPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticCurveKeyPair.swift; sourceTree = "<group>"; };
 		A32FB6D81E54661200C5EA21 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A9756AFD1F3FD32D00E60D3C /* X509Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = X509Request.swift; sourceTree = "<group>"; };
+		A9756AFF1F3FEDD200E60D3C /* OID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				A32FB6D61E54599B00C5EA21 /* EllipticCurveKeyPair.swift */,
+				A9756AFD1F3FD32D00E60D3C /* X509Request.swift */,
+				A9756AFF1F3FEDD200E60D3C /* OID.swift */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -227,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9756B001F3FEDD200E60D3C /* OID.swift in Sources */,
 				A32FB6B21E54596900C5EA21 /* SecondViewController.swift in Sources */,
 				A32FB6D71E54599B00C5EA21 /* EllipticCurveKeyPair.swift in Sources */,
 				A32FB6AE1E54596900C5EA21 /* AppDelegate.swift in Sources */,
+				A9756AFE1F3FD32D00E60D3C /* X509Request.swift in Sources */,
 				A32FB6B01E54596900C5EA21 /* FirstViewController.swift in Sources */,
 				A32FB6D31E54598700C5EA21 /* ELCKPCommonCryptoAccess.m in Sources */,
 				A32FB6D91E54661200C5EA21 /* Utils.swift in Sources */,
