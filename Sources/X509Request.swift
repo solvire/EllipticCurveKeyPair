@@ -12,6 +12,15 @@ import Foundation
 
 public class X509NameAttribute {
     
+    
+    var nameOID: ObjectIdentifier
+    
+    init (nameOID: ObjectIdentifier) {
+        
+        self.nameOID = nameOID
+        
+    }
+    
 }
 
 public class X509Name {
@@ -41,6 +50,11 @@ public struct CertificateSigningRequestBuilder {
     
     mutating func addSubjectName(subjectName: X509Name) {
         self.subjectName = subjectName
+    }
+    
+    func generateRequest(){
+        
+        
     }
 
 }

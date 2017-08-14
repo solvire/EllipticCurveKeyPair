@@ -64,7 +64,7 @@ class SecondViewController: UIViewController {
     }
     
     var cycleIndex = 0
-    let digests = ["ABC", "IS", "ABOUT", "ALL", "POTUS", "CAN", "READ"]
+    let digests = ["ABC", "IS", "ABOUT", "ALL", "POTUS", "CAN", "NUKE"]
     
     @IBAction func createDigest(_ sender: Any) {
         cycleIndex += 1
@@ -89,7 +89,8 @@ class SecondViewController: UIViewController {
         do {
             // fill up our OID names
             let attributes = [
-                X509NameAttribute()
+                X509NameAttribute(nameOID: NameOID.COUNTRY_NAME),
+                X509NameAttribute(nameOID: NameOID.COUNTRY_NAME)
             ]
             
             // pass in the subject name to the builder on init
