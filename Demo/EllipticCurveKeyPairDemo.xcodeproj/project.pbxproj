@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3357AC9EE7210123D03EFE0B /* Pods_EllipticCurveKeyPairDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE28CADD814D5E10BF22D9E /* Pods_EllipticCurveKeyPairDemo.framework */; };
 		A32FB6AE1E54596900C5EA21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6AD1E54596900C5EA21 /* AppDelegate.swift */; };
 		A32FB6B01E54596900C5EA21 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6AF1E54596900C5EA21 /* FirstViewController.swift */; };
 		A32FB6B21E54596900C5EA21 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32FB6B11E54596900C5EA21 /* SecondViewController.swift */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14213997CE00842C81AF81FF /* Pods-EllipticCurveKeyPairDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EllipticCurveKeyPairDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EllipticCurveKeyPairDemo/Pods-EllipticCurveKeyPairDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3BE28CADD814D5E10BF22D9E /* Pods_EllipticCurveKeyPairDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EllipticCurveKeyPairDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9157B827D6853AE435BEE7EA /* Pods-EllipticCurveKeyPairDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EllipticCurveKeyPairDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EllipticCurveKeyPairDemo/Pods-EllipticCurveKeyPairDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A32FB6AA1E54596900C5EA21 /* EllipticCurveKeyPairDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EllipticCurveKeyPairDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32FB6AD1E54596900C5EA21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A32FB6AF1E54596900C5EA21 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3357AC9EE7210123D03EFE0B /* Pods_EllipticCurveKeyPairDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E96DE275359995968DD80B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9157B827D6853AE435BEE7EA /* Pods-EllipticCurveKeyPairDemo.debug.xcconfig */,
+				14213997CE00842C81AF81FF /* Pods-EllipticCurveKeyPairDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2FAD921E0301EFADC4068296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BE28CADD814D5E10BF22D9E /* Pods_EllipticCurveKeyPairDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A32FB6A11E54596900C5EA21 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				A32FB6AC1E54596900C5EA21 /* EllipticCurveKeyPairDemo */,
 				A32FB6C31E54596900C5EA21 /* EllipticCurveKeyPairDemoTests */,
 				A32FB6AB1E54596900C5EA21 /* Products */,
+				0E96DE275359995968DD80B1 /* Pods */,
+				2FAD921E0301EFADC4068296 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A32FB6C91E54596900C5EA21 /* Build configuration list for PBXNativeTarget "EllipticCurveKeyPairDemo" */;
 			buildPhases = (
+				4830EBD4216C72B5C9BC38A3 /* [CP] Check Pods Manifest.lock */,
 				A32FB6A61E54596900C5EA21 /* Sources */,
 				A32FB6A71E54596900C5EA21 /* Frameworks */,
 				A32FB6A81E54596900C5EA21 /* Resources */,
+				608AF58B04C06806A84ED15D /* [CP] Embed Pods Frameworks */,
+				2842C62EEF432FEE0C89D1E6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,7 +214,7 @@
 				TargetAttributes = {
 					A32FB6A91E54596900C5EA21 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 755M73Q4BF;
+						DevelopmentTeam = W5BJU9MSGN;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -237,6 +264,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2842C62EEF432FEE0C89D1E6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EllipticCurveKeyPairDemo/Pods-EllipticCurveKeyPairDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4830EBD4216C72B5C9BC38A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		608AF58B04C06806A84ED15D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EllipticCurveKeyPairDemo/Pods-EllipticCurveKeyPairDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A32FB6A61E54596900C5EA21 /* Sources */ = {
@@ -389,10 +464,11 @@
 		};
 		A32FB6CA1E54596900C5EA21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9157B827D6853AE435BEE7EA /* Pods-EllipticCurveKeyPairDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 755M73Q4BF;
+				DEVELOPMENT_TEAM = W5BJU9MSGN;
 				INFOPLIST_FILE = EllipticCurveKeyPairDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.agens.EllipticCurveKeyPairDemo;
@@ -405,10 +481,11 @@
 		};
 		A32FB6CB1E54596900C5EA21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14213997CE00842C81AF81FF /* Pods-EllipticCurveKeyPairDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 755M73Q4BF;
+				DEVELOPMENT_TEAM = W5BJU9MSGN;
 				INFOPLIST_FILE = EllipticCurveKeyPairDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.agens.EllipticCurveKeyPairDemo;
