@@ -92,7 +92,14 @@ class SecondViewController: UIViewController {
         signatureTextView.text = instanceOfCustomObject.x509Req as! String
         instanceOfCustomObject.ssl_client_version()
         
-        let md5d: MessageDigest5 = MessageDigest5()
+//        let sha256: (Data) -> Data = { return ELCKPCommonCryptoAccess.sha256Digest(for: $0) }
+//        let md5d: (Data) -> Data = { return MessageDigest5.hashValue(for: "testing") }
+
+        let str = "testing".data(using: .utf8)
+        let hsh = MessageDigest5.hashValue(for: str!)
+        print("testing digest")
+        print(hsh.hashValue)
+
 
         do {
             // fill up our OID names

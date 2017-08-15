@@ -21,8 +21,9 @@
 
 @implementation MessageDigest5
 
-- (NSData *)hashValueOfData:(NSData *)data
++ (NSData *)hashValueForData:(NSData *)data
 {
+
     MD5_CTX md5Ctx;
     unsigned char hashValue[MD5_DIGEST_LENGTH];
 

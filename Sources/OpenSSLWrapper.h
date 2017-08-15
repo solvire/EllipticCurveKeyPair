@@ -16,10 +16,14 @@
 
 @interface OpenSSLWrapper : NSObject
 
-@property (strong, nonatomic) id x509Req;
+@property (strong, nonatomic) id _Nullable x509Req;
 
 - (void) SSL_client_version;
 
 @end
 
 @interface MessageDigest5 : NSObject
+
++ (nonnull NSData *)hashValueForData:(nonnull NSData *)data;
+
+@end

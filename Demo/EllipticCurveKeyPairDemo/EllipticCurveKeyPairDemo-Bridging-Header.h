@@ -3,4 +3,5 @@
 //
 
 #import "ELCKPCommonCryptoAccess.h"
+#import <openssl/md5.h>
 #import "OpenSSLWrapper.h"
