@@ -21,7 +21,7 @@
 		A9756AFE1F3FD32D00E60D3C /* X509Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9756AFD1F3FD32D00E60D3C /* X509Request.swift */; };
 		A9756B001F3FEDD200E60D3C /* OID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9756AFF1F3FEDD200E60D3C /* OID.swift */; };
 		A9E8B2B81F4125DB007267C8 /* mkcert.c in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B2B61F4125DB007267C8 /* mkcert.c */; };
-		A9E8B2BA1F412C8C007267C8 /* BridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B2B91F412C8C007267C8 /* BridgingHeader.m */; };
+		A9E8B2BA1F412C8C007267C8 /* OpenSSLWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8B2B91F412C8C007267C8 /* OpenSSLWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,10 @@
 		A32FB6D81E54661200C5EA21 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A9756AFD1F3FD32D00E60D3C /* X509Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = X509Request.swift; sourceTree = "<group>"; };
 		A9756AFF1F3FEDD200E60D3C /* OID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OID.swift; sourceTree = "<group>"; };
-		A9E8B2B51F41256C007267C8 /* mkcertBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mkcertBridge.h; sourceTree = "<group>"; };
+		A9E8B2B51F41256C007267C8 /* OpenSSLWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenSSLWrapper.h; sourceTree = "<group>"; };
 		A9E8B2B61F4125DB007267C8 /* mkcert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mkcert.c; path = ../Sources/mkcert.c; sourceTree = "<group>"; };
 		A9E8B2B71F4125DB007267C8 /* mkcert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mkcert.h; path = ../Sources/mkcert.h; sourceTree = "<group>"; };
-		A9E8B2B91F412C8C007267C8 /* BridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BridgingHeader.m; sourceTree = "<group>"; };
+		A9E8B2B91F412C8C007267C8 /* OpenSSLWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSSLWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +154,8 @@
 				A32FB6D61E54599B00C5EA21 /* EllipticCurveKeyPair.swift */,
 				A9756AFD1F3FD32D00E60D3C /* X509Request.swift */,
 				A9756AFF1F3FEDD200E60D3C /* OID.swift */,
-				A9E8B2B51F41256C007267C8 /* mkcertBridge.h */,
-				A9E8B2B91F412C8C007267C8 /* BridgingHeader.m */,
+				A9E8B2B51F41256C007267C8 /* OpenSSLWrapper.h */,
+				A9E8B2B91F412C8C007267C8 /* OpenSSLWrapper.m */,
 			);
 			name = Sources;
 			path = ../Sources;
@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					A32FB6A91E54596900C5EA21 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = W5BJU9MSGN;
+						DevelopmentTeam = 755M73Q4BF;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -320,7 +320,7 @@
 			files = (
 				A9E8B2B81F4125DB007267C8 /* mkcert.c in Sources */,
 				A9756B001F3FEDD200E60D3C /* OID.swift in Sources */,
-				A9E8B2BA1F412C8C007267C8 /* BridgingHeader.m in Sources */,
+				A9E8B2BA1F412C8C007267C8 /* OpenSSLWrapper.m in Sources */,
 				A32FB6B21E54596900C5EA21 /* SecondViewController.swift in Sources */,
 				A32FB6D71E54599B00C5EA21 /* EllipticCurveKeyPair.swift in Sources */,
 				A32FB6AE1E54596900C5EA21 /* AppDelegate.swift in Sources */,
@@ -468,7 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = W5BJU9MSGN;
+				DEVELOPMENT_TEAM = 755M73Q4BF;
 				INFOPLIST_FILE = EllipticCurveKeyPairDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.agens.EllipticCurveKeyPairDemo;
@@ -485,7 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = W5BJU9MSGN;
+				DEVELOPMENT_TEAM = 755M73Q4BF;
 				INFOPLIST_FILE = EllipticCurveKeyPairDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.agens.EllipticCurveKeyPairDemo;

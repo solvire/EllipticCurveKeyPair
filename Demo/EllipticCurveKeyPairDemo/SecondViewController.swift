@@ -86,6 +86,14 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func signCSR(_ sender: Any) {
+        
+        let instanceOfCustomObject: OpenSSLWrapper = OpenSSLWrapper()
+        instanceOfCustomObject.x509Req = "Hello World"
+        signatureTextView.text = instanceOfCustomObject.x509Req as! String
+        instanceOfCustomObject.ssl_client_version()
+        
+        let md5d: MessageDigest5 = MessageDigest5()
+
         do {
             // fill up our OID names
             let attributes = [
@@ -100,7 +108,7 @@ class SecondViewController: UIViewController {
             
 //            let subjectName = X509Name()
 //            xbuilder.addSubjectName(subjectName: subjectName)
-            signatureTextView.text = "Somting signeded"
+//            signatureTextView.text = "Somting signeded"
         } catch {
             publicKeyTextView.text = "Somting not a signed"
         }

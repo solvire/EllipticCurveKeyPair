@@ -13,4 +13,13 @@
 #endif /* mkcertBridge_h */
 
 
-void mkcert(
+
+@interface OpenSSLWrapper : NSObject
+
+@property (strong, nonatomic) id x509Req;
+
+- (void) SSL_client_version;
+
+@end
+
+@interface MessageDigest5 : NSObject
